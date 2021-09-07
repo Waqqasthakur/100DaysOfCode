@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Grading
+    </title>
+        <script>
+            var jsMarks = parseFloat(prompt("Enter the JavaScript marks"))
+            var javaMarks = parseFloat(prompt("Enter the Java marks"))
+            var nodeMarks = parseFloat(prompt("Enter the Node JS marks"))
+            var totalMarks = jsMarks + javaMarks + nodeMarks
+            document.write("Total Marks : " + totalMarks)
+            document.write("<br/>")
+            var averageMarks = totalMarks/3;
+            document.write("Average Marks : " + averageMarks)
+            document.write("<br/>")
+            if(jsMarks >= 35 && javaMarks >= 35 && nodeMarks >= 35){
+                document.write("Result: Passed")
+                document.write("<br/>")
+                if (averageMarks >= 35 && averageMarks <= 59)
+                {
+                    document.write("You have scored an average of: "+ averageMarks + "with a grade: C")
+                }
+                else if (averageMarks >= 60 && averageMarks <= 69)
+                {
+                    document.write("You have scored an average of: "+ averageMarks + "with a grade: B")
+                }
+                else
+                {
+                    document.write("You have scored an average of: "+ averageMarks + "with a grade: A")
+                }
+            }
+            else{
+                document.write("Result: Failed")
+            }
+        </script>
+    
+</head>
+<body>
+    <script>
+    
+    </script>
+</body>
+</html>
